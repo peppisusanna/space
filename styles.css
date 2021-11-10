@@ -10,6 +10,7 @@
         body {
             background-image:url(https://peppiruokonen.w3spaces.com/images/space-pink.jpg);
             background-size: 100%;
+          padding: 50px;
         }
         h1 {
             font-family: brush script mt;
@@ -17,7 +18,7 @@
             font-size: 50px;
             color: white;
             background-color: rgba(179, 101, 123, 20%);
-            padding: 50px;
+            padding: 20px;
             padding-left: 60px;
         }
         p {
