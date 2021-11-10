@@ -51,7 +51,7 @@ h1 {
 body {
   background-image: url("https://peppiruokonen.w3spaces.com/images/stars.jpg");
     background-color: rgb(0, 0, 26);
-    padding: 0px;
+    padding: 10px;
 }
 p {
     font-weight: lighter;
@@ -106,6 +106,49 @@ img {
   font-family: OCR A Std, monospace;
   font-size: 14px;
 }
+.progress-bar-striped {
+				overflow: hidden;
+				height: 20px;
+				margin-bottom: 20px;
+				background-color: rgba(102, 80, 33,70%);
+				border-radius: 4px;
+				-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+				-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+				box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+			}
+			.progress-bar-striped > div {
+				background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+				background-size: 40px 40px;
+				float: left;
+				width: 0%;
+				height: 100%;
+				font-size: 12px;
+				line-height: 20px;
+				color: #ffffff;
+				text-align: center;
+				-webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+				-moz-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+				box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.15);
+				-webkit-transition: width 3s ease;
+				-moz-transition: width 3s ease;
+				-o-transition: width 3s ease;
+				transition: width 3s ease;
+				animation: progress-bar-stripes 2s linear infinite;
+				background-color: #fcb928;
+			}
+			.progress-bar-striped p{
+				margin: 0;
+			}
+			
+			@keyframes progress-bar-stripes {
+
+				0% {
+					background-position: 40px 0;
+				}
+				100% {
+					background-position: 0 0;
+				}
+			}
     </style>
 </head>
 <body>
@@ -118,7 +161,7 @@ img {
 <div class="clearfix">
   <div class="img-container">
     <p><figure class="fig">
-  <img src="https://peppiruokonen.w3spaces.com/images/Alien-mugshot-copy-1.png" alt="Mugshot" style="width:100%" height="390px">
+  <img src="https://peppiruokonen.w3spaces.com/images/Alien-1.png" alt="First mugshot" style="width:100%" height="390px">
     <figcaption>Is this what an alien looks like?  </figcaption>
                 </figure>
   </div>  <div class="img-container">
@@ -129,7 +172,7 @@ img {
   </div>  
   <div class="img-container">
     <p><figure class="fig">
-  <img src="https://peppiruokonen.w3spaces.com/images/Alien-mugshot-copy-1.png" alt="Mugshot" style="width:100%" height="390px">
+  <img src="https://peppiruokonen.w3spaces.com/images/alien-2.png" alt="Mugshot" style="width:100%" height="390px">
     <figcaption>Is this what an alien looks like?  </figcaption>
                 </figure></p>
   </div>
@@ -142,6 +185,12 @@ img {
     <div class="text">we come in peace</div>
   </div>
 </div>
+<br/>
+<br/>
+<div class="progress-bar-striped">
+			<div style="width: 50%;"><b><p>50%</p></b></div>
+		</div>
+<br/>
 <br/>
 </body>
 </html>
