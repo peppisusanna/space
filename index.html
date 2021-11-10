@@ -4,6 +4,21 @@
 <meta charset=”utf-8”>
 <title>Aliens</title>
 <style>
+  * {
+  box-sizing: border-box;
+}
+
+.img-container {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 h1 {
     font-family: courier, helvetica, sans-serif;
     color: rgba(255, 235, 204, 80%);
@@ -37,18 +52,6 @@ body {
   background-image: url("https://peppiruokonen.w3spaces.com/images/stars.jpg");
     background-color: rgb(0, 0, 26);
     padding: 0px;
-}
-h2 {
-    color: rgb(230, 230, 255);
-    font-family: courier, helvetica, sans-serif;
-    font-weight: lighter;
-}
-#tahdon {
-    color: rgb(249, 236, 242);
-}
-.valitsen {
-    color: rgb(255, 230, 255);
-    font-size: 12px;
 }
 p {
     font-weight: lighter;
@@ -112,24 +115,29 @@ img {
 <h1>ALIENS ARE REAL</h1>
 <h1 class="alin">&nbsp;ALIENS ARE REAL</h1>
 <br/>
+<div class="clearfix">
+  <div class="img-container">
     <p><figure class="fig">
-  <img src="https://peppiruokonen.w3spaces.com/images/Alien-mugshot-copy-1.png" alt="Alien mugshot" width="20%" height="20%" float:"right">
-  <figcaption>Is this what an alien looks like?  </figcaption>
-</figure>
-            <p><figure class="fig">
-  <img src="https://peppiruokonen.w3spaces.com/images/Alien-mugshot-copy-1.png" alt="Alien mugshot" width="20%" height="20%" float:"right">
-  <figcaption>Is this what an alien looks like?  </figcaption>
+  <img src="https://peppiruokonen.w3spaces.com/images/Alien-mugshot-copy-1.png" alt="Mugshot" style="width:100%" height="390px">
+    <figcaption>Is this what an alien looks like?  </figcaption>
                 </figure>
-    </p>
-<br/>
-<h2>Do you believe?</h2>
-<p id="tahdon">I want to believe</p>
-<h2><b>Choose</b> to believe!</h2>
-<p class="valitsen">Okay then</p>
+  </div>  <div class="img-container">
+    <p><figure class="fig">
+  <img src="https://peppiruokonen.w3spaces.com/images/Alien-mugshot-copy-1.png" alt="Mugshot" style="width:100%" height="390px">
+    <figcaption>Is this what an alien looks like?  </figcaption>
+                </figure>
+  </div>  
+  <div class="img-container">
+    <p><figure class="fig">
+  <img src="https://peppiruokonen.w3spaces.com/images/Alien-mugshot-copy-1.png" alt="Mugshot" style="width:100%" height="390px">
+    <figcaption>Is this what an alien looks like?  </figcaption>
+                </figure></p>
+  </div>
+</div>
 <br/>
 <br/>
 <div class="container">
-<img src="https://peppiruokonen.w3spaces.com/images/aliens.jpg" alt="Alien" width="100%" height="100%" float:"left">
+<img src="https://peppiruokonen.w3spaces.com/images/aliens.jpg" alt="Alien" width="100%" height="100%">
   <div class="overlay">
     <div class="text">we come in peace</div>
   </div>
